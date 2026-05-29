@@ -1,14 +1,19 @@
-      
-      <html>
-    <head>
-        <title>NYC Open Data</title>
-     <link href="style.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Filter Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
-    <style>
-        </style>
-    </head>
-    <body>
+   </head>
+   <body onload="init()">
 
+          <div class="card" id="rightPanel">
+
+          <button onclick="reset()">Search</button>
+        </div>
+        
         <div class="card">
 <div id="result"></div>
         </div> 
@@ -17,10 +22,5 @@
 
       </div>
     </div>
-
- 
-
-        
-</body>
-</html>
-      
+    </body>
+    </html>
