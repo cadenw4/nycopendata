@@ -26,7 +26,7 @@ if(sq.other_activities == null){
   sq.other_activities = ""
 }
 
-    build += `<div class="fitted card">
+build += `<div class="fitted card">
   <h1>ID: ${sq.unique_squirrel_id} </h1> 
   <p>Coordinates: ${sq.x}, ${sq.y}</p>
   <p>${sq.primary_fur_color}</p>
