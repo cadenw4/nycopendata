@@ -226,7 +226,7 @@ function reset(){
                   <p>${sq.specific_location}</p>
                   <p>${sq.other_activities}</p>
               </div>`    
-              ct += 1
+              ct +=1 
             
   }
 }
@@ -257,3 +257,4 @@ function filter(){
     reset()
   }
 }
+

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>NYC OPEN DATA FILTER PAGE</title>
+
+
+    <!-- LeafletJS CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- LeafletJS JS file (must place after Leaflet's CSS file) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link href="filter.css" rel="stylesheet" type="text/css" />
     <script src="filterjs.js"></script>
    </head>
+
   <body onload="init()">
     <div class="="fitted banner"><a href ="https://www.thesquirrelcensus.com/" target="_blank" ><img src="image.png" style="width: 100%;"></a></div>
             <nav class="container">
@@ -36,6 +44,7 @@
     </div>
     <div id="result"></div>
     <div id="output" class="container">
+      <div id="map"></div>
 
 
     </div>

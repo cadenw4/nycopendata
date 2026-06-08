@@ -63,7 +63,7 @@ nav a:hover{
   border:6px dotted #55342b;
   text-align:center;
   border-radius:5px;
-  background-image: url(image.png);
+  background-color: #FFF0DB;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -122,4 +122,14 @@ nav a:hover{
   background-color: #EDE8D0;
   font-family: "Times New Roman", Times, serif;
   font-size: larger;
+}
+
+#map{
+  flex:1;
+  width:90%;
+
+  height:calc(100vh - 300px);
+
+  border-radius:10px;
+  box-shadow:2px 2px 2px black;
 }
