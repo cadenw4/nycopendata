@@ -23,41 +23,48 @@ img{
 
 
 nav{
-  background-color:forestgreen;
+  background-color:#55342b;
+  font-family: "Times New Roman", Times, serif;
 }
 nav a{
-  color:black;
+  color:#B2AC88;
   padding:10px;
   flex:1;
   text-decoration:none;
   text-align:center;
+  
 }
 nav a:hover{
-  color:white;
+  color:#55342b;
+  background-color: darkseagreen;
+  transition: 0.5s;
 }
 .subbanner{
   background-color:darkseagreen;
 }
 #banner{
-  background-color:forestgreen;
+  background-color:#55342b;
   color:white;
 }
 #footer{
-  background-color:forestgreen;
+  background-color:#55342b;
   color:white;
   /*position:fixed;*/
   left: 0;
   right: 0;
   bottom:0px;
+  font-family: "Times New Roman", Times, serif;
 }
  
 .card{
   flex:1;
   margin:10px;
   padding:5px;
-  border:1px solid gray;
+  border:6px dotted #55342b;
   text-align:center;
   border-radius:5px;
+  background-image: url(image.png);
+  font-family: "Times New Roman", Times, serif;
 }
 
 
@@ -105,3 +112,14 @@ nav a:hover{
 
 
 
+.filt{
+  flex:1;
+  margin:10px;
+  padding:5px;
+  border:6px dotted #55342b;
+  text-align:center;
+  border-radius:5px;
+  background-color: #EDE8D0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+}
