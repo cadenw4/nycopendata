@@ -133,3 +133,9 @@ nav a:hover{
   border-radius:10px;
   box-shadow:2px 2px 2px black;
 }
+
+#cards_output {
+  flex: 1;
+  width: 100%;
+  
+}

@@ -4,9 +4,9 @@ function get(id){
 }
 
 // showMap() displays the map for a location [lat, lon] in the right panel
-function showMap(lat, lon){
+function showMap(x, y){
   //alert(location);
-  let location = [lat, lon];
+  let location = [x, y];
   //Line below needed to create the map object once.
   if(!mapObj){
       mapObj = L.map("map");
@@ -28,17 +28,18 @@ function card( info ){
   //Some complaints may not have latitudes and longitudes
   //only create a button if these values exists
   let mapButton = "";
-  if(info.x && info.y){
-    mapButton = `<input type="button" onclick="showMap( ${location} )" value="Map">`
+  if(info.geocoded_column.coordinates){
+        mapButton = `<input type="button" onclick="showMap( ${info.y}, ${info.x} )" value="Map">`
+
   }
 
-    build += `<div class="fitted card">
-                  <h1>ID: ${sq.unique_squirrel_id} </h1> 
-                  <p>Coordinates: ${sq.x}, ${sq.y}</p>
-                  <p>${sq.primary_fur_color}</p>
-                  <h3>${sq.age}</h3>
-                  <p>${sq.specific_location}</p>
-                  <p>${sq.other_activities}</p>
+    build = `<div class="fitted card">
+                  <h1>ID: ${info.unique_squirrel_id} </h1> 
+                  <p>Coordinates: ${info.x}, ${info.y}</p>
+                  <p>${info.primary_fur_color}</p>
+                  <h3>${info.age}</h3>
+                  <p>${info.specific_location}</p>
+                  <p>${info.other_activities}</p>
                   ${mapButton}
               </div>`    
               ;
