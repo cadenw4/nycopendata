@@ -106,8 +106,8 @@ nav a:hover{
   flex:2;
 }
 .fitted{
-  max-width:550px;
-  min-width:550px;
+  max-width:400px;
+  min-width:400px;
 }
 
 
@@ -125,8 +125,8 @@ nav a:hover{
 }
 
 #map{
-  flex:1;
-  width:90%;
+
+  width:100%;
 
   height:calc(100vh - 300px);
 
@@ -135,7 +135,8 @@ nav a:hover{
 }
 
 #cards_output {
-  flex: 1;
-  width: 100%;
+
+  flex-wrap: wrap;
+  /* width: 100%; */
   
 }
